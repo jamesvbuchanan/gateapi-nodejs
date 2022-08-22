@@ -101,7 +101,9 @@ export * from './withdrawStatus';
 import { AxiosRequestConfig } from 'axios';
 import querystring = require('querystring');
 import crypto = require('crypto');
-import { URL } from 'url';
+var URL
+URL = (typeof window !== 'undefined' && window.URL)
+    ? window.URL : require('url').URL
 
 import { AccountBalance } from './accountBalance';
 import { AutoRepaySetting } from './autoRepaySetting';

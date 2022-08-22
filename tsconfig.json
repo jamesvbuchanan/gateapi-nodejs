@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        
         "module": "commonjs",
         "noImplicitAny": false,
         "suppressImplicitAnyIndexErrors": true,
@@ -10,7 +11,10 @@
         "sourceMap": false,
         "noLib": false,
         "declaration": true,
-        "lib": ["es2017"],
+        "lib": [
+            "es2018",
+            "dom" 
+          ],
         "outDir": "dist",
         "typeRoots": [
             "node_modules/@types"
